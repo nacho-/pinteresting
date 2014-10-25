@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :pins
+
   devise_for :users
   root "pages#home"
   get "about" => "pages#about" #about_path crea un path con la variable que le tiras despues de get
